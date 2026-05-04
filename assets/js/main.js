@@ -141,7 +141,61 @@
     setupMenu();
     wireGoogleBusiness();
     setupScrollReveal();
+    setupLightbox();
   });
+
+  // ----- Lightbox: click any gallery / featured image to view full size -----
+
+  function setupLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    if (!lightbox) return;
+
+    const img = lightbox.querySelector('.lightbox-img');
+    const cap = lightbox.querySelector('.lightbox-cap');
+    const closeBtn = lightbox.querySelector('.lightbox-close');
+
+    function open(src, alt, caption) {
+      img.src = src;
+      img.alt = alt || '';
+      cap.textContent = caption || alt || '';
+      lightbox.classList.add('is-open');
+      document.body.classList.add('lightbox-open');
+      // Focus close button so Esc and tab work naturally
+      closeBtn.focus({ preventScroll: true });
+    }
+
+    function close() {
+      lightbox.classList.remove('is-open');
+      document.body.classList.remove('lightbox-open');
+      // Clear after fade so the next open animates fresh
+      setTimeout(() => {
+        if (!lightbox.classList.contains('is-open')) {
+          img.src = '';
+          cap.textContent = '';
+        }
+      }, 300);
+    }
+
+    function bindClickable(el) {
+      el.addEventListener('click', () => {
+        if (!el.src || el.naturalWidth === 0) return;  // skip placeholders
+        const figure = el.closest('figure');
+        const caption = figure ? (figure.querySelector('figcaption')?.textContent || '') : '';
+        open(el.src, el.alt, caption);
+      });
+    }
+
+    document.querySelectorAll('.gallery-item img, .featured-photo img').forEach(bindClickable);
+
+    closeBtn.addEventListener('click', close);
+    lightbox.addEventListener('click', (e) => {
+      // Click on backdrop or stage (but not the image itself) closes
+      if (e.target === lightbox || e.target.classList.contains('lightbox-stage')) close();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.classList.contains('is-open')) close();
+    });
+  }
 
   // ----- Scroll-reveal animations (IntersectionObserver) -----
 

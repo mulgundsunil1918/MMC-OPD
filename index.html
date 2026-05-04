@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Kannada:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="assets/css/styles.css?v=4" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=5" />
 </head>
 <body>
   <!-- Ambient gradient blobs for the frosted-glass backdrop -->
@@ -312,7 +312,18 @@
     </div>
   </footer>
 
-  <script src="assets/i18n/translations.js?v=4"></script>
-  <script src="assets/js/main.js?v=4"></script>
+  <!-- ============== LIGHTBOX ============== -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button type="button" class="lightbox-close" aria-label="Close">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="lightbox-stage">
+      <img class="lightbox-img" alt="" />
+    </div>
+    <p class="lightbox-cap"></p>
+  </div>
+
+  <script src="assets/i18n/translations.js?v=5"></script>
+  <script src="assets/js/main.js?v=5"></script>
 </body>
 </html>

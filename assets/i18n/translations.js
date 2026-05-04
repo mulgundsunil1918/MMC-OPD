@@ -120,7 +120,7 @@ window.MMC_TRANSLATIONS = {
     },
     a11y: {
       switchLang: 'Switch to Kannada',
-      langName: 'ಕನ್ನಡದಲ್ಲಿ ಅನುವಾದಿಸಿ',
+      langName: 'Translate to English',
       menuOpen: 'Open menu',
       menuClose: 'Close menu'
     }
@@ -247,7 +247,7 @@ window.MMC_TRANSLATIONS = {
     },
     a11y: {
       switchLang: 'Switch to English',
-      langName: 'Translate to English',
+      langName: 'ಕನ್ನಡದಲ್ಲಿ ಅನುವಾದಿಸಿ',
       menuOpen: 'ಮೆನು ತೆರೆಯಿರಿ',
       menuClose: 'ಮೆನು ಮುಚ್ಚಿರಿ'
     }
