@@ -35,21 +35,23 @@
       </span>
     </a>
 
-    <nav class="nav" aria-label="Primary">
-      <a href="#doctors" data-i18n="nav.doctors">Doctors</a>
-      <a href="#services" data-i18n="nav.services">Services</a>
-      <a href="#visit" data-i18n="nav.visit">Visit</a>
-      <a href="#about" data-i18n="nav.about">About</a>
-    </nav>
+    <div class="header-end">
+      <nav class="nav" aria-label="Primary">
+        <a href="#doctors" data-i18n="nav.doctors">Doctors</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#visit" data-i18n="nav.visit">Visit</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+      </nav>
 
-    <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch language">
-      <span class="lang-toggle-icon" aria-hidden="true">⇄</span>
-      <span class="lang-toggle-label" data-i18n="a11y.langName">ಕನ್ನಡ</span>
-    </button>
+      <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch language">
+        <span class="lang-toggle-icon" aria-hidden="true">⇄</span>
+        <span class="lang-toggle-label" data-i18n="a11y.langName">ಕನ್ನಡ</span>
+      </button>
 
-    <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
   <main id="top">
@@ -275,15 +277,16 @@
     <section class="owner" id="about">
       <div class="container narrow">
         <div class="card glass owner-card reveal">
-          <h2 data-i18n="owner.title">About the Founder</h2>
+          <h2 data-i18n="owner.title">Our Vision</h2>
           <p class="owner-body" data-i18n="owner.body">
-            Mulgund Multispeciality Clinic was founded by Dr. Sunil Mulgund with a simple goal: bring trusted, family-centred specialty care to Gadag.
+            Built around a simple idea — bring trusted specialty care to Gadag, all under one roof.
           </p>
           <p class="owner-other">
-            <span data-i18n="owner.otherLabel">Other ventures by the owner:</span>
-            <a href="https://bridgr.co.in/" target="_blank" rel="noopener" class="owner-link">
+            <span data-i18n="owner.otherLabel">Also from the same vision</span>
+            <span class="owner-sep" aria-hidden="true">·</span>
+            <a href="https://bridgr.co.in/" target="_blank" rel="noopener" class="owner-link-subtle">
               <span data-i18n="owner.bridgrLabel">bridgr.co.in</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
             </a>
           </p>
         </div>

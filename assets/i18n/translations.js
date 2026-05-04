@@ -108,9 +108,9 @@ window.MMC_TRANSLATIONS = {
       reviewBtn: 'Leave a Google Review'
     },
     owner: {
-      title: 'About the Founder',
-      body: 'Mulgund Multispeciality Clinic was founded by Dr. Sunil Mulgund with a simple goal: bring trusted specialty care to Gadag, all under one roof. Alongside Dr. Sunita Mulgund and Dr. Viresh U Elimath, the clinic hosts visiting consultants and continues to grow its team of specialists, delivering comprehensive OPD services in a comfortable, modern setting.',
-      otherLabel: 'Other ventures by the owner:',
+      title: 'Our Vision',
+      body: 'Built around a simple idea — bring trusted specialty care to Gadag, all under one roof. Envisioned by Dr. Sunil Mulgund, the clinic today serves the community alongside Dr. Sunita Mulgund, Dr. Viresh U Elimath, and visiting consultants across additional disciplines.',
+      otherLabel: 'Also from the same vision',
       bridgrLabel: 'bridgr.co.in'
     },
     footer: {
@@ -235,9 +235,9 @@ window.MMC_TRANSLATIONS = {
       reviewBtn: 'ಗೂಗಲ್ ರಿವ್ಯೂ ಬರೆಯಿರಿ'
     },
     owner: {
-      title: 'ಸಂಸ್ಥಾಪಕರ ಬಗ್ಗೆ',
-      body: 'ಮುಳಗುಂದ ಮಲ್ಟಿಸ್ಪೆಷಾಲಿಟಿ ಕ್ಲಿನಿಕ್ ಅನ್ನು ಡಾ. ಸುನಿಲ ಮುಳಗುಂದ ಅವರು ಗದಗದ ಜನರಿಗೆ ಒಂದೇ ಸೂರಿನಡಿ ನಂಬಿಕೆಯ ತಜ್ಞ ಆರೈಕೆ ತಲುಪಿಸುವ ಸರಳ ಗುರಿಯಿಂದ ಸ್ಥಾಪಿಸಿದರು. ಡಾ. ಸುನಿತಾ ಮುಳಗುಂದ, ಡಾ. ವಿರೇಶ ಉ ಎಲಿಮಠ ಮತ್ತು ಸಂದರ್ಶಕ ತಜ್ಞ ವೈದ್ಯರೊಂದಿಗೆ ಆಧುನಿಕ, ಸುಸಜ್ಜಿತ ಪರಿಸರದಲ್ಲಿ ಸಮಗ್ರ ಒಪಿಡಿ ಸೇವೆಗಳನ್ನು ಒದಗಿಸುತ್ತಿದೆ.',
-      otherLabel: 'ಮಾಲೀಕರ ಇತರ ಉದ್ಯಮಗಳು:',
+      title: 'ನಮ್ಮ ದೃಷ್ಟಿಕೋನ',
+      body: 'ಒಂದು ಸರಳ ಯೋಚನೆಯ ಸುತ್ತಲೂ ರೂಪುಗೊಂಡಿದೆ — ಗದಗಕ್ಕೆ ಒಂದೇ ಸೂರಿನಡಿ ನಂಬಿಕೆಯ ತಜ್ಞ ಆರೈಕೆಯನ್ನು ತಲುಪಿಸುವುದು. ಡಾ. ಸುನಿಲ ಮುಳಗುಂದ ಅವರ ಪರಿಕಲ್ಪನೆಯಿಂದ ರೂಪಗೊಂಡ ಈ ಕ್ಲಿನಿಕ್ ಇಂದು ಡಾ. ಸುನಿತಾ ಮುಳಗುಂದ, ಡಾ. ವಿರೇಶ ಉ ಎಲಿಮಠ ಮತ್ತು ಹೆಚ್ಚುವರಿ ವಿಭಾಗಗಳ ಸಂದರ್ಶಕ ತಜ್ಞರೊಂದಿಗೆ ಸಮುದಾಯಕ್ಕೆ ಸೇವೆ ಸಲ್ಲಿಸುತ್ತಿದೆ.',
+      otherLabel: 'ಇದೇ ದೃಷ್ಟಿಕೋನದಿಂದ',
       bridgrLabel: 'bridgr.co.in'
     },
     footer: {

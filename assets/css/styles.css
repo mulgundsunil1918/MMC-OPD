@@ -201,6 +201,53 @@ main > section:first-child { padding-top: var(--space-8); }
   color: var(--grey-700);
 }
 
+/* ----------------------------- Kannada typography fixes -----------------------------
+   Kannada has vowel marks (matras) above the baseline + conjunct consonants.
+   Tight line-height and English-style letter-spacing/uppercase break the script.
+*/
+
+html[lang="kn"] body            { line-height: 1.7; }
+
+html[lang="kn"] h1,
+html[lang="kn"] h2,
+html[lang="kn"] h3,
+html[lang="kn"] h4              { line-height: 1.45; letter-spacing: 0; }
+
+html[lang="kn"] .hero-title     {
+  line-height: 1.4;
+  letter-spacing: 0;
+  padding: 0.12em 0;            /* avoid background-clip cropping matras */
+}
+
+/* Kill English-style uppercase + wide tracking on caps-style labels */
+html[lang="kn"] .hero-tagline,
+html[lang="kn"] .section-eyebrow,
+html[lang="kn"] .brand-tag,
+html[lang="kn"] .info-label,
+html[lang="kn"] .doctor-hours,
+html[lang="kn"] .footer-copy {
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+html[lang="kn"] .doctor-spec,
+html[lang="kn"] .doctor-quals,
+html[lang="kn"] .doctor-focus,
+html[lang="kn"] .info-value,
+html[lang="kn"] .lede,
+html[lang="kn"] .owner-body,
+html[lang="kn"] .section-sub,
+html[lang="kn"] .map-meta span {
+  line-height: 1.7;
+  letter-spacing: 0;
+}
+
+html[lang="kn"] .nav a          { letter-spacing: 0; }
+html[lang="kn"] .lang-toggle    { letter-spacing: 0; }
+html[lang="kn"] .btn            { letter-spacing: 0; }
+
+html[lang="kn"] .brand-name     { line-height: 1.4; }
+
 /* ----------------------------- Header ----------------------------- */
 
 .site-header {
@@ -248,10 +295,16 @@ main > section:first-child { padding-top: var(--space-8); }
   text-transform: uppercase;
 }
 
+.header-end {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-left: auto;
+}
+
 .nav {
   display: flex;
   gap: var(--space-2);
-  margin-left: auto;
 }
 .nav a {
   padding: 8px 14px;
@@ -877,6 +930,29 @@ html[lang="kn"] .service-card h3 { font-size: 18px; line-height: 1.35; }
 }
 .owner-link:hover { background: var(--navy); color: var(--white); }
 
+.owner-sep {
+  color: var(--grey-300);
+  font-size: 12px;
+  margin: 0 4px;
+}
+
+.owner-link-subtle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--navy);
+  font-weight: 500;
+  border-bottom: 1px dashed rgba(26, 58, 138, 0.4);
+  padding-bottom: 1px;
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+.owner-link-subtle:hover {
+  color: var(--navy-deep);
+  border-bottom-color: var(--navy-deep);
+  border-bottom-style: solid;
+}
+.owner-link-subtle svg { opacity: 0.7; }
+
 /* ----------------------------- Footer ----------------------------- */
 
 .site-footer {
@@ -925,6 +1001,8 @@ html[lang="kn"] .service-card h3 { font-size: 18px; line-height: 1.35; }
   .visit-grid { grid-template-columns: 1fr; }
   .nav { display: none; }
   .menu-toggle { display: inline-flex; }
+  .lang-toggle-label { display: none; }
+  .lang-toggle { padding: 8px 12px; }
 
   .site-header.menu-open .nav {
     display: flex;
