@@ -1001,8 +1001,9 @@ html[lang="kn"] .service-card h3 { font-size: 18px; line-height: 1.35; }
   .visit-grid { grid-template-columns: 1fr; }
   .nav { display: none; }
   .menu-toggle { display: inline-flex; }
-  .lang-toggle-label { display: none; }
-  .lang-toggle { padding: 8px 12px; }
+  .brand-text { display: none; }              /* free up width on tablets */
+  .lang-toggle { padding: 8px 12px; font-size: 12px; }
+  .lang-toggle-label { max-width: 38vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
   .site-header.menu-open .nav {
     display: flex;
