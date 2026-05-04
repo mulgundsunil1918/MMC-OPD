@@ -946,13 +946,117 @@ html[lang="kn"] .service-card h3 { font-size: 18px; line-height: 1.35; }
 @media (max-width: 560px) {
   .site-header { padding: 8px 12px; gap: var(--space-3); border-radius: 22px; }
   .brand-text { display: none; }
-  .lang-toggle { padding: 7px 12px; font-size: 12px; }
+  .lang-toggle { padding: 8px 10px; font-size: 12px; }
+  .lang-toggle-label { display: none; }
+  .lang-toggle-icon { font-size: 16px; }
   .container { padding: 0 var(--space-4); }
   main > section { padding: var(--space-7) 0; }
   .hero-inner { padding: 36px 22px; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
   .footer-meta { text-align: left; }
 }
+
+/* ----------------------------- Scroll reveal ----------------------------- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Stagger for grids — children fade in slightly delayed */
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
+}
+.reveal-stagger.is-visible > *           { opacity: 1; transform: none; }
+.reveal-stagger.is-visible > *:nth-child(1) { transition-delay: 0.05s; }
+.reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 0.15s; }
+.reveal-stagger.is-visible > *:nth-child(3) { transition-delay: 0.25s; }
+.reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 0.35s; }
+.reveal-stagger.is-visible > *:nth-child(5) { transition-delay: 0.45s; }
+.reveal-stagger.is-visible > *:nth-child(6) { transition-delay: 0.55s; }
+
+/* Initial hero entrance — runs on load */
+.hero-inner > * {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: hero-rise 0.8s var(--ease) forwards;
+}
+.hero-inner > *:nth-child(1) { animation-delay: 0.10s; }
+.hero-inner > *:nth-child(2) { animation-delay: 0.20s; }
+.hero-inner > *:nth-child(3) { animation-delay: 0.30s; }
+.hero-inner > *:nth-child(4) { animation-delay: 0.40s; }
+.hero-inner > *:nth-child(5) { animation-delay: 0.50s; }
+.hero-inner > *:nth-child(6) { animation-delay: 0.60s; }
+.hero-inner > *:nth-child(7) { animation-delay: 0.70s; }
+
+@keyframes hero-rise {
+  to { opacity: 1; transform: none; }
+}
+
+/* ----------------------------- Mobile polish ----------------------------- */
+
+/* Prevent layout shift while images load */
+.gallery-item img,
+.featured-photo img,
+.doctor-avatar img {
+  background: var(--grey-100);
+}
+
+/* Tap targets — ensure all interactive elements >= 44px on touch */
+@media (hover: none) {
+  .nav a, .lang-toggle, .btn { min-height: 44px; }
+
+  /* Disable hover lifts on touch devices — they trigger on tap and feel buggy */
+  .doctor-card:hover,
+  .service-card:hover,
+  .gallery-item:hover,
+  .visit-map:hover { transform: none; }
+
+  .gallery-item:hover img { transform: none; }
+}
+
+/* Smooth scroll for anchor jumps */
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+/* Tighten things on phone */
+@media (max-width: 480px) {
+  .hero-logo { width: 92px; height: 92px; }
+  .hero-cta { gap: 10px; }
+  .hero-cta .btn { padding: 11px 18px; font-size: 14px; }
+  .doctor-avatar { width: 96px; height: 96px; }
+  .avatar-fallback { font-size: 32px; }
+  .visit-cta { flex-direction: column; align-items: stretch; }
+  .visit-cta .btn { justify-content: center; }
+  .map-canvas { min-height: 220px; }
+  .footer-meta { font-size: 12px; }
+
+  /* Smaller blob blur on phone for perf */
+  .blob { filter: blur(60px); opacity: 0.45; }
+}
+
+/* iOS safe-area: respect notch */
+@supports (padding: max(0px)) {
+  .site-header { padding-left: max(14px, env(safe-area-inset-left)); padding-right: max(18px, env(safe-area-inset-right)); }
+  .site-footer { padding-bottom: max(var(--space-6), env(safe-area-inset-bottom)); }
+}
+
+/* Disable expensive ambient animation on small screens for smoother feel */
+@media (max-width: 700px) {
+  .blob-a, .blob-b, .blob-c { animation-duration: 0s; animation-play-state: paused; }
+  .grain { opacity: 0.4; }
+}
+
+/* Image zoom on hover (gallery) — disable for touch handled above */
 
 /* ----------------------------- Reduced motion ----------------------------- */
 
