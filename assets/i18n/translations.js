@@ -8,6 +8,7 @@ window.MMC_TRANSLATIONS = {
       home: 'Home',
       doctors: 'Doctors',
       services: 'Services',
+      blog: 'Blog',
       visit: 'Visit',
       about: 'About'
     },
@@ -118,6 +119,25 @@ window.MMC_TRANSLATIONS = {
       built: 'Website by',
       copyright: '© 2026 Mulgund Multispeciality Clinic. All rights reserved.'
     },
+    blog: {
+      title: 'Latest from the clinic',
+      subtitle: 'Health updates, tips, and announcements.',
+      loadingCard: 'Loading latest posts…',
+      empty: 'No posts yet — check back soon.',
+      error: "Couldn't load posts.",
+      readDirect: 'Read directly on Blogger',
+      allPosts: 'All posts',
+      loading: 'Loading post…',
+      reactionsLabel: 'Did this resonate?',
+      commentBtn: 'Comment on this post',
+      byline: 'By',
+      errNoIdTitle: 'No post selected',
+      errNoIdBody: 'Looks like the link is missing a post id.',
+      errNotFoundTitle: 'Post not found',
+      errNotFoundBody: 'This post may have been removed or renamed.',
+      errLoadTitle: "Couldn't load this post",
+      errLoadBody: 'Please check your connection and try again.'
+    },
     a11y: {
       switchLang: 'Switch to Kannada',
       langName: 'Translate to English',
@@ -135,6 +155,7 @@ window.MMC_TRANSLATIONS = {
       home: 'ಮುಖಪುಟ',
       doctors: 'ವೈದ್ಯರು',
       services: 'ಸೇವೆಗಳು',
+      blog: 'ಬ್ಲಾಗ್',
       visit: 'ಭೇಟಿ ನೀಡಿ',
       about: 'ನಮ್ಮ ಬಗ್ಗೆ'
     },
@@ -244,6 +265,25 @@ window.MMC_TRANSLATIONS = {
       tagline: 'ನಂಬಿಕೆಯ ಆರೈಕೆ · ಮುಳಗುಂದ ಮಲ್ಟಿಸ್ಪೆಷಾಲಿಟಿ ಕ್ಲಿನಿಕ್ · ಗದಗ',
       built: 'ವೆಬ್‌ಸೈಟ್ ನಿರ್ಮಾತೃ',
       copyright: '© 2026 ಮುಳಗುಂದ ಮಲ್ಟಿಸ್ಪೆಷಾಲಿಟಿ ಕ್ಲಿನಿಕ್. ಎಲ್ಲ ಹಕ್ಕುಗಳು ಕಾಯ್ದಿರಿಸಿವೆ.'
+    },
+    blog: {
+      title: 'ಕ್ಲಿನಿಕ್‌ನಿಂದ ಇತ್ತೀಚಿನವು',
+      subtitle: 'ಆರೋಗ್ಯ ಸುದ್ದಿಗಳು, ಸಲಹೆಗಳು ಮತ್ತು ಪ್ರಕಟಣೆಗಳು.',
+      loadingCard: 'ಇತ್ತೀಚಿನ ಪೋಸ್ಟ್‌ಗಳು ಲೋಡ್ ಆಗುತ್ತಿವೆ…',
+      empty: 'ಇನ್ನೂ ಯಾವುದೇ ಪೋಸ್ಟ್‌ಗಳಿಲ್ಲ — ಶೀಘ್ರದಲ್ಲೇ ಪರಿಶೀಲಿಸಿ.',
+      error: 'ಪೋಸ್ಟ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಲಾಗಲಿಲ್ಲ.',
+      readDirect: 'ನೇರವಾಗಿ ಬ್ಲಾಗರ್‌ನಲ್ಲಿ ಓದಿ',
+      allPosts: 'ಎಲ್ಲ ಪೋಸ್ಟ್‌ಗಳು',
+      loading: 'ಪೋಸ್ಟ್ ಲೋಡ್ ಆಗುತ್ತಿದೆ…',
+      reactionsLabel: 'ಇದು ನಿಮಗೆ ಇಷ್ಟವಾಯಿತೇ?',
+      commentBtn: 'ಈ ಪೋಸ್ಟ್‌ಗೆ ಕಾಮೆಂಟ್ ಮಾಡಿ',
+      byline: 'ಬರೆದವರು',
+      errNoIdTitle: 'ಯಾವುದೇ ಪೋಸ್ಟ್ ಆಯ್ಕೆ ಮಾಡಲಾಗಿಲ್ಲ',
+      errNoIdBody: 'ಲಿಂಕ್‌ನಲ್ಲಿ ಪೋಸ್ಟ್ ಐಡಿ ಕಾಣೆಯಾಗಿರಬಹುದು.',
+      errNotFoundTitle: 'ಪೋಸ್ಟ್ ಸಿಗಲಿಲ್ಲ',
+      errNotFoundBody: 'ಈ ಪೋಸ್ಟ್ ತೆಗೆಯಲ್ಪಟ್ಟಿರಬಹುದು ಅಥವಾ ಮರುಹೆಸರಿಸಲ್ಪಟ್ಟಿರಬಹುದು.',
+      errLoadTitle: 'ಈ ಪೋಸ್ಟ್ ಲೋಡ್ ಮಾಡಲಾಗಲಿಲ್ಲ',
+      errLoadBody: 'ದಯವಿಟ್ಟು ಸಂಪರ್ಕ ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.'
     },
     a11y: {
       switchLang: 'Switch to English',

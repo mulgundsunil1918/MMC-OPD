@@ -14,7 +14,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Kannada:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="assets/css/styles.css?v=6" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=7" />
+  <link rel="stylesheet" href="assets/css/blog.css?v=7" />
 </head>
 <body>
   <!-- Ambient gradient blobs for the frosted-glass backdrop -->
@@ -39,6 +40,7 @@
       <nav class="nav" aria-label="Primary">
         <a href="#doctors" data-i18n="nav.doctors">Doctors</a>
         <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#blog" data-i18n="nav.blog">Blog</a>
         <a href="#visit" data-i18n="nav.visit">Visit</a>
         <a href="#about" data-i18n="nav.about">About</a>
       </nav>
@@ -212,6 +214,27 @@
       </div>
     </section>
 
+    <!-- ============== BLOG ============== -->
+    <section class="blog" id="blog">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2 data-i18n="blog.title">Latest from the clinic</h2>
+          <p class="section-sub" data-i18n="blog.subtitle">Health updates, tips, and announcements.</p>
+        </header>
+
+        <!-- The grid is populated by blog-home.js. Initial skeleton ensures
+             the section never renders empty during the JSONP fetch. -->
+        <div class="blog-grid" id="blog-grid">
+          <div class="blog-card skeleton" aria-hidden="true">
+            <div class="blog-tag">&nbsp;</div>
+            <div class="blog-title" data-i18n="blog.loadingCard">Loading latest posts…</div>
+            <p class="blog-excerpt">&nbsp;</p>
+            <div class="blog-meta"><span>&nbsp;</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ============== VISIT ============== -->
     <section class="visit" id="visit">
       <div class="container">
@@ -323,7 +346,9 @@
     <p class="lightbox-cap"></p>
   </div>
 
-  <script src="assets/i18n/translations.js?v=6"></script>
-  <script src="assets/js/main.js?v=6"></script>
+  <script src="assets/i18n/translations.js?v=7"></script>
+  <script src="assets/js/main.js?v=7"></script>
+  <script src="assets/js/blog-feed.js?v=7"></script>
+  <script src="assets/js/blog-home.js?v=7"></script>
 </body>
 </html>

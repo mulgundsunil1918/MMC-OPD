@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a3a8a" />
+
+  <!-- These will be overwritten dynamically once the post loads. The defaults
+       are sensible for shares of the bare /blog/ URL with no ?id. -->
+  <title>Blog — Mulgund Multispeciality Clinic</title>
+  <meta name="description" content="Health updates and articles from Mulgund Multispeciality Clinic, Gadag." />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Mulgund Multispeciality Clinic — Blog" />
+  <meta property="og:description" content="Health updates and articles from Mulgund Multispeciality Clinic, Gadag." />
+  <meta property="og:image" content="../assets/images/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" href="../assets/images/logo.png" />
+  <link rel="apple-touch-icon" href="../assets/images/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Kannada:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../assets/css/styles.css?v=7" />
+  <link rel="stylesheet" href="../assets/css/blog.css?v=7" />
+</head>
+<body class="reader-body">
+
+  <div class="reader-shell">
+
+    <!-- ============== HEADER ============== -->
+    <header class="reader-header">
+      <a class="reader-brand" href="../">
+        <img src="../assets/images/logo.png" alt="" />
+        <strong data-i18n="hero.clinic">Mulgund Multispeciality Clinic</strong>
+      </a>
+
+      <div class="reader-header-end">
+        <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch language">
+          <span class="lang-toggle-icon" aria-hidden="true">⇄</span>
+          <span class="lang-toggle-label" data-i18n="a11y.langName">ಕನ್ನಡದಲ್ಲಿ ಅನುವಾದಿಸಿ</span>
+        </button>
+        <a class="reader-back" href="../#blog">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          <span data-i18n="blog.allPosts">All posts</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- ============== MAIN ============== -->
+    <main class="reader-main">
+
+      <!-- Loading state (visible by default; hidden by JS once post renders) -->
+      <div id="reader-loading" class="reader-error">
+        <h2 data-i18n="blog.loading">Loading post…</h2>
+      </div>
+
+      <!-- Error state (hidden by default; shown by JS for missing/failed/not-found) -->
+      <div id="reader-error" class="reader-error" hidden>
+        <h2 class="reader-error-title">Post not found</h2>
+        <p class="reader-error-body">This post may have been removed or renamed.</p>
+        <a href="../#blog" class="end-btn primary">
+          <span data-i18n="blog.allPosts">All posts</span>
+        </a>
+      </div>
+
+      <!-- The post itself (hidden until JS populates it) -->
+      <article id="reader-article" class="reader-article" hidden>
+        <span id="post-tag" class="post-tag">Post</span>
+        <div class="post-meta">
+          <span id="post-date">—</span>
+        </div>
+        <h1 id="post-title" class="post-title">—</h1>
+        <p id="post-author" class="post-author">By <strong>Author</strong></p>
+
+        <!-- Blogger HTML is inserted here by blog-reader.js -->
+        <div id="post-content" class="post-content"></div>
+
+        <!-- Emoji reactions (hidden until post loads) -->
+        <div id="reactions" class="reactions" hidden>
+          <p class="reactions-label" data-i18n="blog.reactionsLabel">Did this resonate?</p>
+          <div class="reactions-row">
+            <button class="reaction-btn" data-type="claps" type="button" aria-label="Claps">
+              <span class="reaction-emoji">👏</span>
+              <span class="reaction-count">0</span>
+            </button>
+            <button class="reaction-btn" data-type="love" type="button" aria-label="Love">
+              <span class="reaction-emoji">❤️</span>
+              <span class="reaction-count">0</span>
+            </button>
+            <button class="reaction-btn" data-type="insight" type="button" aria-label="Insight">
+              <span class="reaction-emoji">💡</span>
+              <span class="reaction-count">0</span>
+            </button>
+            <button class="reaction-btn" data-type="thanks" type="button" aria-label="Thanks">
+              <span class="reaction-emoji">🙏</span>
+              <span class="reaction-count">0</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- End-of-post actions -->
+        <div class="reader-end">
+          <a href="../#blog" class="end-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            <span data-i18n="blog.allPosts">All posts</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="end-btn" id="post-comment-btn" hidden>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span data-i18n="blog.commentBtn">Comment on this post</span>
+          </a>
+        </div>
+      </article>
+    </main>
+
+    <!-- ============== FOOTER ============== -->
+    <footer class="reader-footer">
+      <p>
+        <span data-i18n="footer.tagline">Trusted Care · Mulgund Multispeciality Clinic · Gadag</span>
+      </p>
+    </footer>
+  </div>
+
+  <!-- main.js handles language toggle (the toggle in the reader header
+       hooks into the same #lang-toggle element id). -->
+  <script src="../assets/i18n/translations.js?v=7"></script>
+  <script src="../assets/js/main.js?v=7"></script>
+  <script src="../assets/js/blog-feed.js?v=7"></script>
+  <script src="../assets/js/blog-reader.js?v=7"></script>
+</body>
+</html>
