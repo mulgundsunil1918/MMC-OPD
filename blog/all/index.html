@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a3a8a" />
+  <title>All posts — Mulgund Multispeciality Clinic</title>
+  <meta name="description" content="Browse every article from the Mulgund Multispeciality Clinic blog — health updates, tips, and announcements." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="All posts — Mulgund Multispeciality Clinic" />
+  <meta property="og:description" content="Browse every article from the clinic blog." />
+  <meta property="og:image" content="../../assets/images/logo.png" />
+
+  <link rel="icon" type="image/png" href="../../assets/images/logo.png" />
+  <link rel="apple-touch-icon" href="../../assets/images/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Kannada:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../../assets/css/styles.css?v=9" />
+  <link rel="stylesheet" href="../../assets/css/blog.css?v=9" />
+</head>
+<body class="reader-body">
+
+  <div class="reader-shell">
+
+    <header class="reader-header">
+      <a class="reader-brand" href="../../">
+        <img src="../../assets/images/logo.png" alt="" />
+        <strong data-i18n="hero.clinic">Mulgund Multispeciality Clinic</strong>
+      </a>
+
+      <div class="reader-header-end">
+        <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch language">
+          <span class="lang-toggle-icon" aria-hidden="true">⇄</span>
+          <span class="lang-toggle-label" data-i18n="a11y.langName">ಕನ್ನಡದಲ್ಲಿ ಅನುವಾದಿಸಿ</span>
+        </button>
+        <a class="reader-back" href="../../">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          <span data-i18n="blog.backHome">Home</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="reader-main">
+      <div class="archive-container">
+        <header class="archive-header">
+          <h1 data-i18n="blog.allPosts">All posts</h1>
+          <p class="section-sub" data-i18n="blog.allPostsSub">Every article from the clinic blog, newest first.</p>
+        </header>
+
+        <!-- Category filter — hidden until JS confirms 2+ categories exist -->
+        <div class="archive-filter" hidden>
+          <label for="archive-cat" class="archive-filter-label" data-i18n="blog.filterLabel">Filter:</label>
+          <select id="archive-cat" aria-label="Filter posts by category"></select>
+        </div>
+
+        <!-- Loading skeleton — replaced by archive content once loaded -->
+        <div id="archive-loading" class="blog-grid">
+          <div class="blog-card skeleton" aria-hidden="true">
+            <div class="blog-tag">&nbsp;</div>
+            <div class="blog-title">&nbsp;</div>
+            <p class="blog-excerpt">&nbsp;</p>
+            <div class="blog-meta"><span>&nbsp;</span></div>
+          </div>
+          <div class="blog-card skeleton" aria-hidden="true">
+            <div class="blog-tag">&nbsp;</div>
+            <div class="blog-title">&nbsp;</div>
+            <p class="blog-excerpt">&nbsp;</p>
+            <div class="blog-meta"><span>&nbsp;</span></div>
+          </div>
+          <div class="blog-card skeleton" aria-hidden="true">
+            <div class="blog-tag">&nbsp;</div>
+            <div class="blog-title">&nbsp;</div>
+            <p class="blog-excerpt">&nbsp;</p>
+            <div class="blog-meta"><span>&nbsp;</span></div>
+          </div>
+        </div>
+
+        <!-- Year groups inserted here by blog-archive.js -->
+        <div id="archive-years"></div>
+
+        <!-- Empty / error message -->
+        <div id="archive-empty" class="blog-message" hidden></div>
+      </div>
+    </main>
+
+    <footer class="reader-footer">
+      <p>
+        <span data-i18n="footer.tagline">Trusted Care · Mulgund Multispeciality Clinic · Gadag</span>
+      </p>
+    </footer>
+
+  </div>
+
+  <script src="../../assets/i18n/translations.js?v=9"></script>
+  <script src="../../assets/js/main.js?v=9"></script>
+  <script src="../../assets/js/blog-feed.js?v=9"></script>
+  <script src="../../assets/js/blog-archive.js?v=9"></script>
+</body>
+</html>

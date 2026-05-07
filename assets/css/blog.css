@@ -124,6 +124,31 @@ html[lang="kn"] .blog-excerpt { line-height: 1.7; }
   50%      { opacity: 0.55; }
 }
 
+/* ----- "View all posts" link below home grid ----- */
+.blog-view-all {
+  margin-top: var(--space-6);
+  text-align: center;
+}
+.blog-view-all a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 22px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 0.2s var(--ease), background 0.2s var(--ease), gap 0.2s var(--ease);
+}
+.blog-view-all a:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  gap: 12px;
+}
+
 /* ----- Empty / error state ----- */
 .blog-message {
   grid-column: 1 / -1;
@@ -136,6 +161,97 @@ html[lang="kn"] .blog-excerpt { line-height: 1.7; }
   font-size: 14px;
 }
 .blog-message a { color: var(--accent); font-weight: 600; }
+
+/* ============================================================
+   ARCHIVE PAGE  (/blog/all/index.html)
+   ============================================================ */
+
+.archive-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.archive-header {
+  margin-bottom: var(--space-7);
+  text-align: center;
+}
+.archive-header h1 {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  margin: 0 0 8px;
+}
+html[lang="kn"] .archive-header h1 { letter-spacing: 0; line-height: 1.3; padding: 0.1em 0; }
+
+.archive-filter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: var(--space-6);
+  padding: 14px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  flex-wrap: wrap;
+}
+
+.archive-filter-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+#archive-cat {
+  padding: 8px 36px 8px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  cursor: pointer;
+  font-family: inherit;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%231a3a8a' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  transition: border-color 0.2s var(--ease);
+}
+#archive-cat:focus,
+#archive-cat:hover { border-color: var(--accent); }
+
+.archive-year-group {
+  margin-bottom: var(--space-7);
+}
+.archive-year-group:last-child { margin-bottom: 0; }
+
+.archive-year {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0;
+  margin: 0 0 var(--space-4);
+  padding-bottom: 12px;
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  font-feature-settings: "tnum";
+}
+.archive-year::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+  align-self: center;
+}
+
+@media (max-width: 480px) {
+  .archive-year { font-size: 19px; }
+  .archive-filter { padding: 12px 14px; }
+}
 
 /* ============================================================
    READER PAGE  (/blog/index.html)
