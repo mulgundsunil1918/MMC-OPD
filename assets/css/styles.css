@@ -53,6 +53,12 @@
 
 /* ----------------------------- Reset ----------------------------- */
 
+/* The HTML [hidden] attribute should always win, regardless of any
+   display:flex / inline-flex / grid set on the same element. Browsers'
+   UA styles set [hidden] { display: none } but our class rules have
+   higher specificity, so we make this explicit. */
+[hidden] { display: none !important; }
+
 *,
 *::before,
 *::after { box-sizing: border-box; }
