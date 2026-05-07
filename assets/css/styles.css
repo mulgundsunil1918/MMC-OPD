@@ -786,113 +786,48 @@ html[lang="kn"] .service-card h3 { font-size: 18px; line-height: 1.35; }
   flex-direction: column;
   padding: 6px;
   overflow: hidden;
-  min-height: 360px;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
-}
-.visit-map:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 20px 50px rgba(15, 37, 87, 0.18), 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+  min-height: 380px;
 }
 
-.map-canvas {
-  position: relative;
+.map-frame {
   flex: 1;
-  min-height: 280px;
+  width: 100%;
+  min-height: 320px;
+  border: 0;
   border-radius: calc(var(--radius-lg) - 6px);
-  background:
-    radial-gradient(circle at 50% 60%, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0) 60%),
-    linear-gradient(135deg, #dbe4f5 0%, #c1cfeb 50%, #a8b9dd 100%);
-  overflow: hidden;
-}
-
-.map-grid {
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(15, 37, 87, 0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(15, 37, 87, 0.07) 1px, transparent 1px),
-    linear-gradient(rgba(15, 37, 87, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(15, 37, 87, 0.04) 1px, transparent 1px);
-  background-size: 80px 80px, 80px 80px, 16px 16px, 16px 16px;
-  background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
-  mask-image: radial-gradient(ellipse at center, #000 50%, transparent 95%);
-  -webkit-mask-image: radial-gradient(ellipse at center, #000 50%, transparent 95%);
-}
-
-.map-pin {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -100%);
-  color: var(--navy);
-  filter: drop-shadow(0 6px 14px rgba(15, 37, 87, 0.35));
-  z-index: 2;
-}
-.map-pin svg { display: block; }
-
-.map-pin-pulse {
-  position: absolute;
-  bottom: -2px;
-  left: 50%;
-  width: 18px;
-  height: 6px;
-  border-radius: 50%;
-  background: rgba(15, 37, 87, 0.25);
-  transform: translateX(-50%);
-  animation: pin-pulse 2.4s ease-in-out infinite;
-}
-
-@keyframes pin-pulse {
-  0%, 100% { transform: translateX(-50%) scale(1); opacity: 0.6; }
-  50%      { transform: translateX(-50%) scale(1.5); opacity: 0.2; }
-}
-
-.map-coords {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  padding: 6px 12px;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 999px;
-  font-size: 11px;
-  font-weight: 600;
-  font-feature-settings: "tnum";
-  color: var(--navy-deep);
-  letter-spacing: 0.02em;
-  z-index: 2;
+  display: block;
+  background: var(--grey-100);
 }
 
 .map-meta {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  padding: 16px 18px 10px;
+  padding: 14px 16px 8px;
 }
 .map-meta strong {
   font-size: 15px;
   color: var(--ink);
   font-weight: 700;
 }
-.map-meta span {
+.map-meta > span {
   font-size: 13px;
   color: var(--grey-500);
   line-height: 1.4;
 }
 .map-meta-cta {
-  display: inline-flex !important;
+  display: inline-flex;
   align-items: center;
   gap: 6px;
   margin-top: 4px;
-  color: var(--navy) !important;
-  font-weight: 600 !important;
-  font-size: 13px !important;
-  transition: gap 0.2s var(--ease);
+  align-self: flex-start;
+  color: var(--navy);
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  transition: gap 0.2s var(--ease), color 0.2s var(--ease);
 }
-.visit-map:hover .map-meta-cta { gap: 10px; }
+.map-meta-cta:hover { gap: 10px; color: var(--navy-deep); }
 
 /* ----------------------------- Owner ----------------------------- */
 

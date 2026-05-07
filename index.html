@@ -14,8 +14,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Kannada:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="assets/css/styles.css?v=7" />
-  <link rel="stylesheet" href="assets/css/blog.css?v=7" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=8" />
+  <link rel="stylesheet" href="assets/css/blog.css?v=8" />
 </head>
 <body>
   <!-- Ambient gradient blobs for the frosted-glass backdrop -->
@@ -275,23 +275,23 @@
             </div>
           </div>
 
-          <a class="card glass visit-map" href="https://www.google.com/maps?q=15.429396291679899,75.63593543987065" target="_blank" rel="noopener" aria-label="Open Mulgund Multispeciality Clinic in Google Maps">
-            <div class="map-canvas" aria-hidden="true">
-              <span class="map-grid"></span>
-              <span class="map-pin">
-                <svg viewBox="0 0 24 24" width="42" height="42" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                <span class="map-pin-pulse"></span>
-              </span>
-              <span class="map-coords">15.4294° N, 75.6359° E</span>
-            </div>
+          <div class="card glass visit-map">
+            <iframe
+              class="map-frame"
+              title="Mulgund Multispeciality Clinic — location on Google Maps"
+              src="https://www.google.com/maps?q=15.429396291679899,75.63593543987065&z=17&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen></iframe>
             <div class="map-meta">
               <strong data-i18n="hero.clinic">Mulgund Multispeciality Clinic</strong>
               <span data-i18n="visit.address">1st Floor, Arihant Plaza, Rotary Circle, Gadag — 582 101</span>
-              <span class="map-meta-cta" data-i18n="visit.openMapsBtn">Open in Maps
+              <a class="map-meta-cta" href="https://www.google.com/maps?q=15.429396291679899,75.63593543987065" target="_blank" rel="noopener">
+                <span data-i18n="visit.openMapsBtn">Open in Maps</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><polyline points="12 5 19 12 12 19"/></svg>
-              </span>
+              </a>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </section>
@@ -346,9 +346,9 @@
     <p class="lightbox-cap"></p>
   </div>
 
-  <script src="assets/i18n/translations.js?v=7"></script>
-  <script src="assets/js/main.js?v=7"></script>
-  <script src="assets/js/blog-feed.js?v=7"></script>
-  <script src="assets/js/blog-home.js?v=7"></script>
+  <script src="assets/i18n/translations.js?v=8"></script>
+  <script src="assets/js/main.js?v=8"></script>
+  <script src="assets/js/blog-feed.js?v=8"></script>
+  <script src="assets/js/blog-home.js?v=8"></script>
 </body>
 </html>
