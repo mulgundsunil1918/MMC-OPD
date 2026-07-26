@@ -28,7 +28,7 @@ window.MMC_TRANSLATIONS = {
     doctors: {
       title: 'Meet Our Doctors',
       subtitle: 'Resident specialists, with visiting consultants across more disciplines.',
-      hours: 'OPD: 4 PM – 9 PM',
+      hours: 'OPD: 9 AM – 9 PM',
       sunil: {
         name: 'Dr. Sunil Mulgund',
         spec: 'Paediatrician & Neonatologist',
@@ -42,7 +42,7 @@ window.MMC_TRANSLATIONS = {
         focus: 'Ear, nose, throat, head & neck conditions across all age groups.'
       },
       viresh: {
-        name: 'Dr. Viresh U Elimath',
+        name: 'Dr. Veeresh U Yalimath',
         spec: 'Obstetrician & Gynaecologist',
         quals: 'MBBS, MS (OBG) — Obstetrics, Gynaecology & Infertility care',
         focus: 'Pregnancy care, gynaecological conditions, and infertility evaluation.'
@@ -100,9 +100,11 @@ window.MMC_TRANSLATIONS = {
       addressLabel: 'Address',
       address: '1st Floor, Arihant Plaza, Rotary Circle, Gadag — 582 101',
       hoursLabel: 'OPD Hours',
-      hours: 'Mon – Sat · 4:00 PM – 9:00 PM',
+      hours: 'Mon – Sat · 9:00 AM – 9:00 PM (Closed Sun)',
       phoneLabel: 'Phone',
       phone: '+91 90192 63206',
+      emailLabel: 'Email',
+      email: 'help@bridgr.co.in',
       googleBtn: 'View on Google',
       directionsBtn: 'Get Directions',
       openMapsBtn: 'Open in Maps',
@@ -110,7 +112,7 @@ window.MMC_TRANSLATIONS = {
     },
     owner: {
       title: 'Our Vision',
-      body: 'Built around a simple idea — bring trusted specialty care to Gadag, all under one roof. Envisioned by Dr. Sunil Mulgund, the clinic today serves the community alongside Dr. Sunita Mulgund, Dr. Viresh U Elimath, and visiting consultants across additional disciplines.',
+      body: 'Built around a simple idea — bring trusted specialty care to Gadag, all under one roof. Envisioned by Dr. Sunil Mulgund, the clinic today serves the community alongside Dr. Sunita Mulgund, Dr. Veeresh U Yalimath, and visiting consultants across additional disciplines.',
       otherLabel: 'Also from the same vision',
       bridgrLabel: 'bridgr.co.in'
     },
@@ -181,7 +183,7 @@ window.MMC_TRANSLATIONS = {
     doctors: {
       title: 'ನಮ್ಮ ವೈದ್ಯರು',
       subtitle: 'ಸ್ಥಳೀಯ ತಜ್ಞ ವೈದ್ಯರು ಮತ್ತು ಹೆಚ್ಚುವರಿ ವಿಭಾಗಗಳಿಗೆ ಸಂದರ್ಶಕ ತಜ್ಞರು.',
-      hours: 'ಒಪಿಡಿ: ಸಂಜೆ 4 ರಿಂದ ರಾತ್ರಿ 9',
+      hours: 'ಒಪಿಡಿ: ಬೆಳಿಗ್ಗೆ 9 ರಿಂದ ರಾತ್ರಿ 9',
       sunil: {
         name: 'ಡಾ. ಸುನಿಲ ಮುಳಗುಂದ',
         spec: 'ಮಕ್ಕಳ ಮತ್ತು ನವಜಾತ ಶಿಶು ತಜ್ಞ',
@@ -195,7 +197,7 @@ window.MMC_TRANSLATIONS = {
         focus: 'ಎಲ್ಲಾ ವಯಸ್ಸಿನವರಿಗೆ ಕಿವಿ, ಮೂಗು, ಗಂಟಲು, ತಲೆ ಮತ್ತು ಕುತ್ತಿಗೆ ತೊಂದರೆಗಳ ಚಿಕಿತ್ಸೆ.'
       },
       viresh: {
-        name: 'ಡಾ. ವಿರೇಶ ಉ ಎಲಿಮಠ',
+        name: 'ಡಾ. ವೀರೇಶ ಉ ಯಲಿಮಠ',
         spec: 'ಪ್ರಸೂತಿ ಮತ್ತು ಸ್ತ್ರೀ ರೋಗ ಹಾಗೂ ಬಂಜೆತನ ನಿವಾರಣಾ ತಜ್ಞ',
         quals: 'ಎಂಬಿಬಿಎಸ್, ಎಂ.ಎಸ್ (OBG)',
         focus: 'ಗರ್ಭಧಾರಣೆ ಆರೈಕೆ, ಸ್ತ್ರೀರೋಗ ಚಿಕಿತ್ಸೆ ಮತ್ತು ಬಂಜೆತನ ಮೌಲ್ಯಮಾಪನ.'
@@ -253,9 +255,11 @@ window.MMC_TRANSLATIONS = {
       addressLabel: 'ವಿಳಾಸ',
       address: 'ಮೊದಲನೆಯ ಮಹಡಿ, ಅರಿಹಂತ್ ಪ್ಲಾಜಾ, ರೋಟರಿ ಸರ್ಕಲ್, ಗದಗ — 582 101',
       hoursLabel: 'ಒಪಿಡಿ ಸಮಯ',
-      hours: 'ಸೋಮವಾರ – ಶನಿವಾರ · ಸಂಜೆ 4:00 ರಿಂದ ರಾತ್ರಿ 9:00 ರವರೆಗೆ',
+      hours: 'ಸೋಮವಾರ – ಶನಿವಾರ · ಬೆಳಿಗ್ಗೆ 9:00 ರಿಂದ ರಾತ್ರಿ 9:00 ರವರೆಗೆ (ಭಾನುವಾರ ರಜೆ)',
       phoneLabel: 'ಫೋನ್',
       phone: '+91 90192 63206',
+      emailLabel: 'ಇಮೇಲ್',
+      email: 'help@bridgr.co.in',
       googleBtn: 'ಗೂಗಲ್‌ನಲ್ಲಿ ನೋಡಿ',
       directionsBtn: 'ದಾರಿ ತಿಳಿಯಿರಿ',
       openMapsBtn: 'ಮ್ಯಾಪ್‌ನಲ್ಲಿ ತೆರೆಯಿರಿ',
@@ -263,7 +267,7 @@ window.MMC_TRANSLATIONS = {
     },
     owner: {
       title: 'ನಮ್ಮ ದೃಷ್ಟಿಕೋನ',
-      body: 'ಒಂದು ಸರಳ ಯೋಚನೆಯ ಸುತ್ತಲೂ ರೂಪುಗೊಂಡಿದೆ — ಗದಗಕ್ಕೆ ಒಂದೇ ಸೂರಿನಡಿ ನಂಬಿಕೆಯ ತಜ್ಞ ಆರೈಕೆಯನ್ನು ತಲುಪಿಸುವುದು. ಡಾ. ಸುನಿಲ ಮುಳಗುಂದ ಅವರ ಪರಿಕಲ್ಪನೆಯಿಂದ ರೂಪಗೊಂಡ ಈ ಕ್ಲಿನಿಕ್ ಇಂದು ಡಾ. ಸುನಿತಾ ಮುಳಗುಂದ, ಡಾ. ವಿರೇಶ ಉ ಎಲಿಮಠ ಮತ್ತು ಹೆಚ್ಚುವರಿ ವಿಭಾಗಗಳ ಸಂದರ್ಶಕ ತಜ್ಞರೊಂದಿಗೆ ಸಮುದಾಯಕ್ಕೆ ಸೇವೆ ಸಲ್ಲಿಸುತ್ತಿದೆ.',
+      body: 'ಒಂದು ಸರಳ ಯೋಚನೆಯ ಸುತ್ತಲೂ ರೂಪುಗೊಂಡಿದೆ — ಗದಗಕ್ಕೆ ಒಂದೇ ಸೂರಿನಡಿ ನಂಬಿಕೆಯ ತಜ್ಞ ಆರೈಕೆಯನ್ನು ತಲುಪಿಸುವುದು. ಡಾ. ಸುನಿಲ ಮುಳಗುಂದ ಅವರ ಪರಿಕಲ್ಪನೆಯಿಂದ ರೂಪಗೊಂಡ ಈ ಕ್ಲಿನಿಕ್ ಇಂದು ಡಾ. ಸುನಿತಾ ಮುಳಗುಂದ, ಡಾ. ವೀರೇಶ ಉ ಯಲಿಮಠ ಮತ್ತು ಹೆಚ್ಚುವರಿ ವಿಭಾಗಗಳ ಸಂದರ್ಶಕ ತಜ್ಞರೊಂದಿಗೆ ಸಮುದಾಯಕ್ಕೆ ಸೇವೆ ಸಲ್ಲಿಸುತ್ತಿದೆ.',
       otherLabel: 'ಇದೇ ದೃಷ್ಟಿಕೋನದಿಂದ',
       bridgrLabel: 'bridgr.co.in'
     },
