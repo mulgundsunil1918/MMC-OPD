@@ -153,7 +153,7 @@
 
     const BASE = 'https://abacus.jasoncameron.dev';
     const NS = 'mmc-bridgr-co-in';
-    const KEY = 'site-visits';
+    const KEY = 'visits-live';
     // Count each browser session once; plain reads on subsequent page views.
     const alreadyCounted = sessionStorage.getItem('mmc-visit-counted') === '1';
     const url = `${BASE}/${alreadyCounted ? 'get' : 'hit'}/${NS}/${KEY}`;
