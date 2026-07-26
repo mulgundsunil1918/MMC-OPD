@@ -142,7 +142,54 @@
     wireGoogleBusiness();
     setupScrollReveal();
     setupLightbox();
+    setupVisitorCount();
   });
+
+  // ----- Visitor counter (server-side count via Abacus, free & no-auth) -----
+
+  function setupVisitorCount() {
+    const el = document.getElementById('visitor-count');
+    if (!el) return;
+
+    const BASE = 'https://abacus.jasoncameron.dev';
+    const NS = 'mmc-bridgr-co-in';
+    const KEY = 'site-visits';
+    // Count each browser session once; plain reads on subsequent page views.
+    const alreadyCounted = sessionStorage.getItem('mmc-visit-counted') === '1';
+    const url = `${BASE}/${alreadyCounted ? 'get' : 'hit'}/${NS}/${KEY}`;
+
+    fetch(url)
+      .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
+      .then((data) => {
+        const n = data && typeof data.value === 'number' ? data.value : null;
+        if (n === null) return Promise.reject('no value');
+        sessionStorage.setItem('mmc-visit-counted', '1');
+        animateCount(el, n);
+      })
+      .catch(() => {
+        // If the counter can't be reached, hide the band rather than show a broken dash.
+        const section = el.closest('.visitor-count');
+        if (section) section.style.display = 'none';
+      });
+  }
+
+  function animateCount(el, target) {
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced || target <= 0) {
+      el.textContent = target.toLocaleString('en-IN');
+      return;
+    }
+    const duration = 1200;
+    const start = performance.now();
+    function frame(now) {
+      const p = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.floor(target * eased).toLocaleString('en-IN');
+      if (p < 1) requestAnimationFrame(frame);
+      else el.textContent = target.toLocaleString('en-IN');
+    }
+    requestAnimationFrame(frame);
+  }
 
   // ----- Lightbox: click any gallery / featured image to view full size -----
 
