@@ -117,7 +117,7 @@
 
   function wireGoogleBusiness() {
     if (!GOOGLE_BUSINESS_URL) return;
-    document.querySelectorAll('[data-google-review]').forEach((link) => {
+    document.querySelectorAll('[data-google-review], [data-google-maps]').forEach((link) => {
       link.href = GOOGLE_BUSINESS_URL;
     });
   }
