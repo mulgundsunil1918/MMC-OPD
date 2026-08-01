@@ -63,8 +63,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Kannada:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="assets/css/styles.css?v=12" />
-  <link rel="stylesheet" href="assets/css/blog.css?v=12" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=13" />
+  <link rel="stylesheet" href="assets/css/blog.css?v=13" />
 </head>
 <body>
   <!-- Ambient gradient blobs for the frosted-glass backdrop -->
@@ -91,6 +91,7 @@
         <a href="#services" data-i18n="nav.services">Services</a>
         <a href="#blog" data-i18n="nav.blog">Blog</a>
         <a href="#visit" data-i18n="nav.visit">Visit</a>
+        <a href="#review" data-i18n="nav.review">Review</a>
         <a href="#about" data-i18n="nav.about">About</a>
       </nav>
 
@@ -330,7 +331,7 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                 <span data-i18n="visit.openMapsBtn">Open in Maps</span>
               </a>
-              <a class="btn btn-ghost" id="google-business-link" href="#" target="_blank" rel="noopener">
+              <a class="btn btn-ghost" id="google-business-link" data-google-review href="#" target="_blank" rel="noopener">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                 <span data-i18n="visit.reviewBtn">Leave a Google Review</span>
               </a>
@@ -354,6 +355,24 @@
               </a>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== GOOGLE REVIEW CTA ============== -->
+    <section class="review-cta" id="review">
+      <div class="container narrow reveal">
+        <div class="card glass review-card">
+          <span class="review-badge">
+            <svg class="g-logo" width="22" height="22" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+          </span>
+          <div class="review-stars" aria-hidden="true">★★★★★</div>
+          <h2 class="review-title" data-i18n="review.title">We're now on Google Maps</h2>
+          <p class="review-sub" data-i18n="review.sub">Visited us? A quick review helps other families in Gadag find trusted care. It takes less than a minute.</p>
+          <a class="btn btn-primary btn-lg review-btn" data-google-review href="#" target="_blank" rel="noopener">
+            <svg class="g-logo" width="20" height="20" viewBox="0 0 48 48" aria-hidden="true"><path fill="#fff" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#fff" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z" opacity=".9"/><path fill="#fff" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z" opacity=".8"/><path fill="#fff" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z" opacity=".95"/></svg>
+            <span data-i18n="review.btn">Review us on Google</span>
+          </a>
         </div>
       </div>
     </section>
@@ -416,9 +435,9 @@
     <p class="lightbox-cap"></p>
   </div>
 
-  <script src="assets/i18n/translations.js?v=12"></script>
-  <script src="assets/js/main.js?v=12"></script>
-  <script src="assets/js/blog-feed.js?v=12"></script>
-  <script src="assets/js/blog-home.js?v=12"></script>
+  <script src="assets/i18n/translations.js?v=13"></script>
+  <script src="assets/js/main.js?v=13"></script>
+  <script src="assets/js/blog-feed.js?v=13"></script>
+  <script src="assets/js/blog-home.js?v=13"></script>
 </body>
 </html>

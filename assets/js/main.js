@@ -9,10 +9,8 @@
   'use strict';
 
   // ----- Config -----
-  // PENDING: replace with your actual Google Business Profile review link
-  // (e.g. https://g.page/r/XXXXXXXXXX/review). Until then, this falls back to
-  // the Google Maps location for the clinic so users can still leave a review.
-  const GOOGLE_BUSINESS_URL = 'https://www.google.com/maps?q=15.429396291679899,75.63593543987065';
+  // Google Business Profile review / share link for the clinic.
+  const GOOGLE_BUSINESS_URL = 'https://share.google/Mz3Ftz0gaHrXleFBS';
 
   const STORAGE_KEY = 'mmc-lang';
   const SUPPORTED = ['en', 'kn'];
@@ -118,10 +116,10 @@
   // ----- Google Business URL wiring -----
 
   function wireGoogleBusiness() {
-    const link = document.getElementById('google-business-link');
-    if (link && GOOGLE_BUSINESS_URL) {
+    if (!GOOGLE_BUSINESS_URL) return;
+    document.querySelectorAll('[data-google-review]').forEach((link) => {
       link.href = GOOGLE_BUSINESS_URL;
-    }
+    });
   }
 
   // ----- Init -----

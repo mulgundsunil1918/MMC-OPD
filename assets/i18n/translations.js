@@ -10,6 +10,7 @@ window.MMC_TRANSLATIONS = {
       services: 'Services',
       blog: 'Blog',
       visit: 'Visit',
+      review: 'Review',
       about: 'About'
     },
     hero: {
@@ -111,6 +112,11 @@ window.MMC_TRANSLATIONS = {
       openMapsBtn: 'Open in Maps',
       reviewBtn: 'Leave a Google Review'
     },
+    review: {
+      title: 'We’re now on Google Maps',
+      sub: 'Visited us? A quick review helps other families in Gadag find trusted care. It takes less than a minute.',
+      btn: 'Review us on Google'
+    },
     owner: {
       title: 'Our Vision',
       body: 'Built around a simple idea — bring trusted specialty care to Gadag, all under one roof. Envisioned by Dr. Sunil Mulgund, the clinic today serves the community alongside Dr. Sunita Mulgund, Dr. Veeresh U Yalimath, and visiting consultants across additional disciplines.',
@@ -166,6 +172,7 @@ window.MMC_TRANSLATIONS = {
       services: 'ಸೇವೆಗಳು',
       blog: 'ಬ್ಲಾಗ್',
       visit: 'ಭೇಟಿ ನೀಡಿ',
+      review: 'ರಿವ್ಯೂ',
       about: 'ನಮ್ಮ ಬಗ್ಗೆ'
     },
     hero: {
@@ -266,6 +273,11 @@ window.MMC_TRANSLATIONS = {
       directionsBtn: 'ದಾರಿ ತಿಳಿಯಿರಿ',
       openMapsBtn: 'ಮ್ಯಾಪ್‌ನಲ್ಲಿ ತೆರೆಯಿರಿ',
       reviewBtn: 'ಗೂಗಲ್ ರಿವ್ಯೂ ಬರೆಯಿರಿ'
+    },
+    review: {
+      title: 'ನಾವು ಈಗ ಗೂಗಲ್ ಮ್ಯಾಪ್‌ನಲ್ಲಿದ್ದೇವೆ',
+      sub: 'ನಮ್ಮ ಕ್ಲಿನಿಕ್‌ಗೆ ಭೇಟಿ ನೀಡಿದ್ದೀರಾ? ನಿಮ್ಮ ಒಂದು ರಿವ್ಯೂ ಗದಗಿನ ಇತರ ಕುಟುಂಬಗಳಿಗೆ ನಂಬಿಕೆಯ ಆರೈಕೆ ಹುಡುಕಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಒಂದು ನಿಮಿಷಕ್ಕಿಂತ ಕಡಿಮೆ ಸಮಯ ಸಾಕು.',
+      btn: 'ಗೂಗಲ್‌ನಲ್ಲಿ ರಿವ್ಯೂ ಬರೆಯಿರಿ'
     },
     owner: {
       title: 'ನಮ್ಮ ದೃಷ್ಟಿಕೋನ',
